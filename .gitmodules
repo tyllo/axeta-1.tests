@@ -1,0 +1,4 @@
+[submodule "dist"]
+	path = dist
+	url = git://github.com/tyllo/axeta-test.git
+	branch = gh-pages
