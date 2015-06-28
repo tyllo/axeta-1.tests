@@ -1,0 +1,30 @@
+
+@import "variables";
+
+.bg-color-10 {
+  background-color: $color-primary-tint-10;
+}
+
+.bg-color-25 {
+  background-color: $color-primary-tint-25;
+}
+
+.bg-color-50 {
+  background-color: $color-primary-tint-50;
+}
+
+.bg-color-75 {
+  background-color: $color-primary-tint-75;
+}
+
+.bg-color-90 {
+  background-color: $color-primary-tint-90;
+}
+
+.strong { @extend .bg-color-10; }
+.medium { @extend .bg-color-50; }
+.weak‏   { @extend .bg-color-75; }
+
+.label[data-skill="strong"] { @extend .strong; }
+.label[data-skill="medium"] { @extend .medium; }
+.label[data-skill="weak"]   { @extend .weak‏;   }

@@ -1,0 +1,53 @@
+
+/************************************************
+            Cделаем сетку квадратной
+            [ http://goo.gl/YnLvmN ]
+================================================*/
+
+[class*='column-'].square {
+  position: relative;
+  border: $colomn-border solid $color-primary-tint-90;
+  box-sizing: border-box;
+}
+
+[class*='column-'].square:before{
+  content: "";
+  display: block;
+  box-sizing: border-box;
+}
+
+.column-4.square:before  { padding-top: 100%; }
+.column-8.square:before  { padding-top: 50%;  }
+.column-12.square:before  { padding-top: 33.333%;  }
+.column-16.square:before { padding-top: 25%;  }
+
+/* ===== == = === 30em (480px) === = == ===== */
+
+@media only screen and (max-width : 30em) {
+  .column-12.square:before  { padding-top: 33.333%*4;  }
+}
+
+.square .content {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  box-sizing: border-box;
+  margin: $margin-base;
+  }
+
+.square .content.collapse {
+  margin: 0;
+}
+
+.uncollapse {
+  margin: $margin-base;
+}
+
+/* hover-эффект при наведении на ячейку
+************************************************/
+.content.over:hover {
+  @extend .transition;
+  margin: -$margin-base/4;
+  border: $colomn-border solid $color-primary-tint-90;
+  box-shadow: 0 0 $margin-base/4 rgba(0,0,0,0.2);
+  z-index: 2000;
+}

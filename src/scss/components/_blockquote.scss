@@ -1,0 +1,43 @@
+
+/*                   blockquote
+*************************************************/
+blockquote {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+blockquote p,
+blockquote cite {
+  margin: 0;
+  position: relative;
+  z-index: 300;
+}
+
+blockquote:before,
+blockquote:after {
+  position: absolute;
+  font-family: Arial;
+  font-style: normal;
+  font-size: 12em;
+  line-height: 1;
+  color: $color-primary-tint-90;
+  z-index: 10;
+}
+
+blockquote:before {
+  top: 0; left: 0;
+  content: '\201c';
+}
+
+blockquote:after {
+  bottom: 0; right: 0;
+  content: '\201e';
+}
+
+cite {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  float: right;
+}

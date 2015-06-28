@@ -1,0 +1,74 @@
+
+/*                 input's
+*************************************************/
+
+// нафиг x - клинер в explorer
+input::-ms-clear {
+    display: none;
+}
+
+.container-input, .label {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  // margin: $margin-base/16;
+  padding: $margin-base/2 $margin-base/4;
+  border: none;
+  line-height: 100%;
+  font-size: calculate-rem(12px);
+  font-weight: 600;
+}
+
+/* стилизуем плейсхолдер */
+input[name='skill'] {
+  &::-webkit-input-placeholder { color: black; }
+  &::-moz-placeholder          { color: black; } /* Firefox 19+ */
+  &:-moz-placeholder           { color: black; } /* Firefox 18- */
+  &:-ms-input-placeholder      { color: black; }
+}
+
+input {
+  background-color: transparent;
+  border: 0;
+}
+input[name="skill"]:focus, textarea:focus {
+  box-shadow: 0 0 calculate-rem(2px) lightgreen;
+  border-color: lightgreen;
+}
+input:hover, .active input {
+  border: $colomn-border solid black;
+
+}
+input:hover {
+  cursor: pointer;
+}
+.active input:hover {
+  cursor: text;
+}
+
+
+.active input {
+  background-color: white;
+}
+
+.label {
+  cursor: default;
+}
+
+.active .buttons,
+.label:hover .buttons{
+  display: inline;
+}
+
+#name input {
+  font-size: 180%;
+  line-height: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#skill input {
+  font-weight: normal;
+}

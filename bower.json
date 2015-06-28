@@ -1,0 +1,23 @@
+{
+  "name": "Axeta.test",
+  "version": "0.0.1",
+  "authors": [
+    "tyllo <gmtyllo@gmail.com>"
+  ],
+  "description": "Тестовое задание - 1 задача",
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "concise": "~2.1.0",
+    "addons": "https://github.com/ConciseCSS/addons.git",
+    "jquery-legacy": "jquery#1"
+  }
+}

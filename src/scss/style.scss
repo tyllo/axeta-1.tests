@@ -1,0 +1,69 @@
+// подключим фрейморк http://concisecss.com
+// пути прописаны в gulpfile
+@import 'concise-custom';
+// подключим аддон concise с labels
+@import 'badges-labels/badges';
+
+// подклчим переменные
+@import 'variables';
+
+// кастомные цвета
+@import 'components/colors';
+
+// квадратная сетка
+@import 'components/square';
+
+// справляем базовые элемены
+@import 'components/base';
+
+// заголовки у ячеек
+@import 'components/hgroup';
+
+// кастомные инпуты
+@import 'components/inputs';
+
+// кастомные кнопки
+@import 'components/buttons';
+
+// кастмные цитаты
+@import 'components/blockquote';
+
+// вспомогательные
+@import 'components/helpers';
+
+/*            label со скиллом
+*************************************************/
+
+#skills {
+  margin-bottom: calculate-rem(2px);
+};
+
+#skill { width: 60%; }
+/* ===== == = === 30em (480px) === = == ===== */
+
+@media only screen and (max-width : 30em) {
+  #skill { width: 100%; }
+}
+
+.label {
+  display: inline-block;
+  padding: calculate-rem(2px) calculate-rem(5px);
+  margin-right: calculate-rem(2px);
+  margin-bottom: calculate-rem(2px);
+  // &::last-child { margin-right: 0 };
+  border-radius: calculate-rem(2px);
+  line-height: 1;
+  font-size: 0.75rem;
+}
+
+/*                   список
+*************************************************/
+ul {
+  margin: 0 $margin-base/2;
+  // margin-left: -$margin-base/2;
+}
+li {
+  // list-style-type: none;
+  line-height: 1.5em;
+  margin-left: -$margin-base/2;
+}

@@ -1,0 +1,95 @@
+
+/*            кнопки ok и cancel
+*************************************************/
+.buttons {
+  color: white;
+  position: absolute;
+  top: 0; bottom: 0; right: 0;
+  // transform: translate(0, 50%);
+}
+
+// скроем кнопки и будем показывать
+// когда active
+.buttons {
+  display: none;
+}
+
+button[name="ok"] {
+  @extend .bg-color-90;
+  @extend .circle;
+  &:before {
+    content: '\2714'; /* ✔ */
+  }
+}
+button[name="cancel"] {
+  @extend .bg-color-90;
+  @extend .circle;
+  &:before {
+    content: '\2716'; /* ✖ */
+  }
+}
+.label button[name="cancel"] {
+  background-color: red;
+}
+// button[name="ok"],
+// button[name="cancel"] {
+//   opacity: 0.5;
+// }
+
+// button[name="ok"]:hover,
+// button[name="cancel"]:hover {
+//   opacity: 1;
+// }
+
+.buttons select {
+  margin: 0;
+  margin-right: calculate-rem(7px);
+  height: 100%;
+  border-color: none;
+  font-size: 1rem;
+  color: $color-primary;
+}
+
+button.circle {
+  float: right;
+  // скругляем
+  border: none;
+  border-radius: 100%;
+  font-size: 0.5rem;
+  line-height: 100%;
+  // посередине по вертикали
+  padding: calculate-rem(5px);
+  margin-right: calculate-rem(5px);
+  transform: translate(0, 35%);
+}
+// грязный хак: middle .label
+.label button.circle {
+  transform: translate(0, 0);
+}
+
+button.print {
+  // position: absolute;
+  right: 0;
+  padding: calculate-rem(6px) calculate-rem(10px);
+  float: right;
+  border: none;
+  border-radius: 10rem;
+  font-size: calculate-rem(10px);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: $color-primary;
+  color: white;
+}
+
+button.print:hover {
+  @extend .transition;
+  color: black;
+  background-color: $color-primary-tint-50;
+}
+
+/* ===== == = === 30em (480px) === = == ===== */
+
+@media only screen and (max-width : 30em) {
+  button.print { display: none }
+}

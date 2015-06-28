@@ -1,0 +1,47 @@
+
+-
+  name = 'John Smith'
+  location = 'Portland, Oregon, USA'
+  lang = 'English'
+  skill = 'Add skills'
+
+.container-input#name
+  input(type='text' name='name' value=name)
+  .buttons
+    button(name='ok')
+    button(name='cancel')
+
+.container-input#location
+  input(type='text' name='location' value=location)
+  .buttons
+    button(name='ok')
+    button(name='cancel')
+
+.container-input#lang
+  input(type='text' name='lang' value=lang)
+  .buttons
+    button(name='ok')
+    button(name='cancel')
+
+#skills
+  .label(data-skill='strong')
+    span PHP
+    .buttons: button(name='cancel')
+  .label(data-skill='strong')
+    span Ruby
+    .buttons: button(name='cancel')
+  .label(data-skill='medium')
+    span Javascript
+    .buttons: button(name='cancel')
+  .label(data-skill='weak')
+    span Actionscript
+    .buttons: button(name='cancel')
+
+.container-input#skill
+  input(type='text' name='skill' placeholder=skill)
+  .buttons
+    select(name='level')
+      option(value='strong') strong
+      option(value='medium') medium
+      option(value='weak') weak‏
+    button(name='ok')
