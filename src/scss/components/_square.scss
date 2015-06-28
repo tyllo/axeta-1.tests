@@ -21,9 +21,9 @@
 .column-12.square:before  { padding-top: 33.333%;  }
 .column-16.square:before { padding-top: 25%;  }
 
-/* ===== == = === 30em (480px) === = == ===== */
+/* ===== == = === 48em === = == ===== */
 
-@media only screen and (max-width : 30em) {
+@media only screen and (max-width : 48em) {
   .column-12.square:before  { padding-top: 33.333%*4;  }
 }
 

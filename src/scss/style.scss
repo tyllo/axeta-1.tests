@@ -1,6 +1,6 @@
 // подключим фрейморк http://concisecss.com
 // пути прописаны в gulpfile
-@import 'concise-custom';
+@import 'concise-custom/concise';
 // подключим аддон concise с labels
 @import 'badges-labels/badges';
 
@@ -39,9 +39,9 @@
 };
 
 #skill { width: 60%; }
-/* ===== == = === 30em (480px) === = == ===== */
+/* ===== == = === 48em === = == ===== */
 
-@media only screen and (max-width : 30em) {
+@media only screen and (max-width : 48em) {
   #skill { width: 100%; }
 }
 
