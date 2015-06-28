@@ -839,8 +839,8 @@ a.badge:hover, a.badge:focus {
 .column-16.square:before {
   padding-top: 25%; }
 
-/* ===== == = === 30em (480px) === = == ===== */
-@media only screen and (max-width: 30em) {
+/* ===== == = === 48em === = == ===== */
+@media only screen and (max-width: 48em) {
   .column-12.square:before {
     padding-top: 133.332%; } }
 
@@ -881,8 +881,8 @@ a.badge:hover, a.badge:focus {
 html {
   font-size: 2vw; }
 
-/* ===== == = === 30em (480px) === = == ===== */
-@media only screen and (max-width: 30em) {
+/* ===== == = === 48em === = == ===== */
+@media only screen and (max-width: 48em) {
   html {
     font-size: 7vw; } }
 
@@ -1055,8 +1055,8 @@ button.print:hover {
   color: black;
   background-color: gray; }
 
-/* ===== == = === 30em (480px) === = == ===== */
-@media only screen and (max-width: 30em) {
+/* ===== == = === 48em === = == ===== */
+@media only screen and (max-width: 48em) {
   button.print {
     display: none; } }
 
@@ -1141,8 +1141,8 @@ cite {
 #skill {
   width: 60%; }
 
-/* ===== == = === 30em (480px) === = == ===== */
-@media only screen and (max-width: 30em) {
+/* ===== == = === 48em === = == ===== */
+@media only screen and (max-width: 48em) {
   #skill {
     width: 100%; } }
 
