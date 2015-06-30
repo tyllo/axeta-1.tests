@@ -12,7 +12,7 @@
 ```
 $ npm install -g bower gulp
 ```
-- Клонируйте репозиторий или скопируйте на диск и [разархивируйте](https://github.com/tyllo/notebook-backbone/archive/master.zip):
+- Клонируйте репозиторий или скопируйте на диск и [разархивируйте](https://github.com/tyllo/axeta-test/archive/master.zip):
 ```
 $ git clone git@github.com:tyllo/axeta-test.git axeta#1
 ```
