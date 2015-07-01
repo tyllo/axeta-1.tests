@@ -3,6 +3,7 @@
 
   // предопределенные селекторы
   var cancel = 'button[name="cancel"]';
+  var del = 'button[name="delete"]';
   var ok = 'button[name="ok"]';
   var container = '.container-input';
   var containerSkills = '#skills';
@@ -19,7 +20,7 @@
   =====================================================*/
 
   // навесим событие удаление из DOM label с навыком (PHP, Ruby)
-  $('#skills').on('click', cancel, function (e) {
+  $('#skills').on('click', del, function (e) {
     // удалим ближайшего подходящего родителя
     $(e.target).closest('.label').remove();
   });
@@ -45,7 +46,8 @@
     // запомним input
     $input = $(e.target);
     // запомним значение до изменения
-    value = $input.val().trim();
+    // ie8 не умеет .trim()
+    value = $input.val();
     // запомним контейнер и активируем
     $container = $input.closest(container);
     $container.addClass('active');

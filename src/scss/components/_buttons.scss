@@ -21,14 +21,15 @@ button[name="ok"] {
     content: '\2714'; /* ✔ */
   }
 }
-button[name="cancel"] {
+button[name="cancel"],
+button[name="delete"] {
   @extend .bg-color-90;
   @extend .circle;
   &:before {
     content: '\2716'; /* ✖ */
   }
 }
-.label button[name="cancel"] {
+button[name="delete"] {
   background-color: red;
 }
 // button[name="ok"],

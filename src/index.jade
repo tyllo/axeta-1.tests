@@ -9,6 +9,9 @@ html(lang="ru")
     meta(name='description', content='')
     meta(name='keywords', content='')
     link(rel='stylesheet' type='text/css' media='screen' href='css/style.css')
+    //- <!--[if lt IE 9]>
+        link(rel='stylesheet' type='text/css' media='screen' href='css/style-ie8.css')
+        <![endif]-->
   body
     //- header: include templates/header
     section#content: include templates/content
@@ -16,37 +19,3 @@ html(lang="ru")
     script(src='js/vendors/jquery.js')
     script(src='js/script.js')
 
-
-//-    //- <!--[if lt IE 9]>
-    script(type="text/javascript").
-      if (!Array.prototype.filter)
-      {
-        Array.prototype.filter = function(fun /*, thisp*/)
-        {
-          var len = this.length;
-          if (typeof fun != "function")
-            throw new TypeError();
-          var res = new Array();
-          var thisp = arguments[1];
-          for (var i = 0; i < len; i++)
-          {
-            if (i in this)
-            {
-              var val = this[i]; // in case fun mutates this
-              if (fun.call(thisp, val, i, this))
-                res.push(val);
-            }
-          }
-          return res;
-        };
-      }
-    //- script(src='js/vendors/tokenizer.js')
-    //- script(src='js/vendors/parser.js')
-    //- script(src='js/vendors/vminpoly.js')
-    <script src="http://saabi.github.io/vminpoly/tokenizer.js"></script>
-    <script src="http://saabi.github.io/vminpoly/parser.js"></script>
-    <script src="http://saabi.github.io/vminpoly/vminpoly.js"></script>
-    //- script(src='js/vendors/respond.min.js')
-    script(src='js/vendors/rem.min.js')
-
-    //- <![endif]-->
